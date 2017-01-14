@@ -24,9 +24,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ryansobol/eslint-config-ryansobol/issues"
+    "url": "https://github.com/lionel-lints/eslint-config-lionel-lints/issues"
   },
-  "homepage": "https://github.com/ryansobol/eslint-config-ryansobol",
+  "homepage": "https://github.com/lionel-lints/eslint-config-lionel-lints",
   "devDependencies": {
     "eslint": "^3.10.2",
     "eslint-config-ryansobol": "file:."
