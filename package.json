@@ -29,7 +29,7 @@
   "homepage": "https://github.com/lionel-lints/eslint-config-lionel-lints",
   "devDependencies": {
     "eslint": "^3.10.2",
-    "eslint-config-ryansobol": "file:."
+    "eslint-config-lionel-lints": "file:."
   },
   "dependencies": {
     "eslint-plugin-react": "^6.7.1"
