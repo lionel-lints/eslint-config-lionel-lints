@@ -1,11 +1,11 @@
 {
-  "name": "eslint-config-ryansobol",
+  "name": "eslint-config-lionel-lints",
   "version": "10.0.2",
-  "description": "Ryan Sobol's shareable ESLint configuration",
+  "description": "Lionel Lints's shareable ESLint configuration",
   "main": "./es6/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ryansobol/eslint-config-ryansobol"
+    "url": "https://github.com/lionel-lints/eslint-config-lionel-lints"
   },
   "scripts": {
     "lint": "eslint"
@@ -15,6 +15,7 @@
     "eslintconfig",
     "config",
     "ryansobol",
+    "lionel-lints",
     "javascript",
     "es5",
     "es6",

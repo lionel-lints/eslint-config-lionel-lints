@@ -1,11 +1,8 @@
-# eslint-config-ryansobol
+# eslint-config-lionel-lints
 
-[![Build][build-img]][build-url]
-[![Chat][chat-img]][chat-url]
 [![License][license-img]][license-url]
-[![NPM][npm-img]][npm-url]
 
-Ryan Sobol's shareable ESLint configuration
+Lionel Lints's fork of Ryan Sobol's shareable ESLint configuration. This fork is being cut to experiment with different rules and styleguides while maintaining the overall linting philosophy set out by the original repo.
 
 ## Philosophy
 
@@ -32,7 +29,7 @@ A major aspect of the [ESLint philosophy](eslint_philosophy) is that it doesn't 
 Install the package globally.
 
 ```shell
-npm install -g eslint eslint-config-ryansobol
+npm install -g eslint eslint-config-lionel-lints
 ```
 
 Change into your project's directory.
@@ -52,8 +49,8 @@ Add [language configuration][language] and [environment configuration][environme
 ```js
 module.exports = {
   extends: [
-    'ryansobol/browser',
-    'ryansobol/es6'
+    'lionel-lints/browser',
+    'lionel-lints/es6'
   ]
 };
 ```
@@ -81,7 +78,7 @@ npm init
 Install the package locally and add it to the `package.json` file as a development dependency.
 
 ```shell
-npm install -D eslint eslint-config-ryansobol
+npm install -D eslint eslint-config-lionel-lints
 ```
 
 Create a `.eslintrc.js` configuration file.
@@ -95,8 +92,8 @@ Add [language configuration][language] and [environmnent configuration][environm
 ```js
 module.exports = {
   extends: [
-    'ryansobol/browser',
-    'ryansobol/es6'
+    'lionel-lints/browser',
+    'lionel-lints/es6'
   ]
 };
 ```
@@ -127,18 +124,18 @@ npm run lint .
 
 A project is linted by **one** of the following language configurations.
 
-| Language     | Module            |
-|--------------|-------------------|
-| ECMAScript 5 | `ryansobol/es5`   |
-| ECMAScript 6 | `ryansobol/es6`   |
-| ECMAScript 7 | `ryansobol/es7`   |
-| ECMAScript 8 | `ryansobol/es8`   |
+| Language     | Module               |
+|--------------|----------------------|
+| ECMAScript 5 | `lionel-lints/es5`   |
+| ECMAScript 6 | `lionel-lints/es6`   |
+| ECMAScript 7 | `lionel-lints/es7`   |
+| ECMAScript 8 | `lionel-lints/es8`   |
 
 Add the following code to the `.eslintrc.js` file of an ECMAScript 6 project.
 
 ```js
 module.exports = {
-  extends: 'ryansobol/es6'
+  extends: 'lionel-lints/es6'
 };
 ```
 
@@ -146,7 +143,7 @@ Or add the following code to the `.eslintrc.js` file of an ECMAScript 7 project.
 
 ```js
 module.exports = {
-  extends: 'ryansobol/es7'
+  extends: 'lionel-lints/es7'
 };
 ```
 
@@ -156,7 +153,7 @@ Customize any rule by overriding it in the `.eslintrc.js` file.
 
 ```js
 module.exports = {
-  extends: 'ryansobol/es6',
+  extends: 'lionel-lints/es6',
 
   rules: {
     'brace-style': [2, '1tbs', { allowSingleLine: true }],
@@ -168,23 +165,23 @@ module.exports = {
 
 Additionally, a project is linted by **any** of the following environment configurations.
 
-| Environment | Module                  |
-|-------------|-------------------------|
-| browser     | `ryansobol/browser`     |
-| Express     | `ryansobol/express`     |
-| jQuery      | `ryansobol/jquery`      |
-| Materialize | `ryansobol/materialize` |
-| Mocha       | `ryansobol/mocha`       |
-| Node.js     | `ryansobol/node`        |
-| React       | `ryansobol/react`       |
+| Environment | Module                     |
+|-------------|----------------------------|
+| browser     | `lionel-lints/browser`     |
+| Express     | `lionel-lints/express`     |
+| jQuery      | `lionel-lints/jquery`      |
+| Materialize | `lionel-lints/materialize` |
+| Mocha       | `lionel-lints/mocha`       |
+| Node.js     | `lionel-lints/node`        |
+| React       | `lionel-lints/react`       |
 
 Add the following code to the `.eslintrc.js` file of an ECMAScript 6 project that's running in a browser.
 
 ```js
 module.exports = {
   extends: [
-    'ryansobol/browser',
-    'ryansobol/es6'
+    'lionel-lints/browser',
+    'lionel-lints/es6'
   ]
 };
 ```
@@ -194,9 +191,9 @@ Add the following code to the `.eslintrc.js` file of an ECMAScript 6 project tha
 ```js
 module.exports = {
   extends: [
-    'ryansobol/browser',
-    'ryansobol/es6',
-    'ryansobol/jquery'
+    'lionel-lints/browser',
+    'lionel-lints/es6',
+    'lionel-lints/jquery'
   ]
 };
 ```
@@ -206,8 +203,8 @@ Add the following code to the `.eslintrc.js` file of an ECMAScript 6 project tha
 ```js
 module.exports = {
   extends: [
-    'ryansobol/es6',
-    'ryansobol/node'
+    'lionel-lints/es6',
+    'lionel-lints/node'
   ]
 };
 ```
@@ -217,10 +214,10 @@ Add the following code to the `.eslintrc.js` file of an ECMAScript 6 project tha
 ```js
 module.exports = {
   extends: [
-    'ryansobol/browser',
-    'ryansobol/es6',
-    'ryansobol/node',
-    'ryansobol/react'
+    'lionel-lints/browser',
+    'lionel-lints/es6',
+    'lionel-lints/node',
+    'lionel-lints/react'
   ]
 };
 ```
@@ -234,10 +231,10 @@ Parser options, like support for ECMAScript 6 modules, can be specified in the `
 ```js
 module.exports = {
   extends: [
-    'ryansobol/browser',
-    'ryansobol/es6',
-    'ryansobol/node',
-    'ryansobol/react'
+    'lionel-lints/browser',
+    'lionel-lints/es6',
+    'lionel-lints/node',
+    'lionel-lints/react'
   ],
 
   parserOptions: {
@@ -253,10 +250,10 @@ The default parser is [Espree][espree] but alternative parsers, like [babel-esli
 ```js
 module.exports = {
   extends: [
-    'ryansobol/browser',
-    'ryansobol/es6',
-    'ryansobol/node',
-    'ryansobol/react'
+    'lionel-lints/browser',
+    'lionel-lints/es6',
+    'lionel-lints/node',
+    'lionel-lints/react'
   ],
 
   parser: 'babel-eslint'
@@ -274,10 +271,10 @@ module.exports = {
   },
 
   extends: [
-    'ryansobol/browser',
-    'ryansobol/es6',
-    'ryansobol/node',
-    'ryansobol/react'
+    'lionel-lints/browser',
+    'lionel-lints/es6',
+    'lionel-lints/node',
+    'lionel-lints/react'
   ]
 };
 ```
@@ -300,14 +297,10 @@ Thanks to the Shopify team for publishing [eslint-config-shopify][shopify] under
 
 Also, thanks to my colleagues and students at [Galvanize][galvanize] for helping me with testing.
 
-[build-img]: https://img.shields.io/travis/ryansobol/eslint-config-ryansobol/master.svg?style=flat-square
-[build-url]: https://travis-ci.org/ryansobol/eslint-config-ryansobol
-[chat-img]: https://img.shields.io/gitter/room/eslint-config-ryansobol/Lobby.svg?style=flat-square
-[chat-url]: https://gitter.im/eslint-config-ryansobol/Lobby
-[license-img]: https://img.shields.io/npm/l/eslint-config-ryansobol.svg?style=flat-square
-[license-url]: https://github.com/ryansobol/eslint-config-ryansobol/blob/master/LICENSE
-[npm-img]: https://img.shields.io/npm/v/eslint-config-ryansobol.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/eslint-config-ryansobol
+A final thanks to Ryan for setting up an awesome linting walkthrough that I can build on.
+
+[license-img]: https://img.shields.io/npm/l/eslint-config-lionel-lints.svg?style=flat-square
+[license-url]: https://github.com/lionel-lints/eslint-config-lionel-lints/blob/master/LICENSE
 
 [angular]: https://github.com/Gillespie59/eslint-plugin-angular
 [babel]: https://github.com/babel/babel-eslint
